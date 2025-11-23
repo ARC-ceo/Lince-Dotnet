@@ -1,0 +1,940 @@
+type: collection.insomnia.rest/5.0
+name: GS LC .NET
+meta:
+  id: wrk_381fd42a7c5243dfb518fad265e18268
+  created: 1763764893711
+  modified: 1763764893711
+collection:
+  - name: Supervisor
+    meta:
+      id: fld_0c902ee95eb84b35a35be1df5a267217
+      created: 1763764893716
+      modified: 1763764893716
+      sortKey: -1759000022685
+    children:
+      - url: http://localhost:5281/supervisor
+        name: Create
+        meta:
+          id: req_239b85442ef34148a16a7eab32116ddd
+          created: 1763764893717
+          modified: 1763765705379
+          isPrivate: false
+          sortKey: -1759000026855
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "arthur@gmail.com",
+            	"nome": "Arthur Ribeiro",
+            	"telefone": "11972935394"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/supervisor/c88a2e57-ad2c-429d-9193-23d49fa70ed4
+        name: Get
+        meta:
+          id: req_9849f64427d74b49842e8d5f591acf9e
+          created: 1763764893719
+          modified: 1763905851203
+          isPrivate: false
+          sortKey: -1759000027055
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/supervisor
+        name: Update
+        meta:
+          id: req_5b174871d25d4c6280231d13d6abac23
+          created: 1763764893720
+          modified: 1763905853369
+          isPrivate: false
+          sortKey: -1759000026955
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id": "c88a2e57-ad1c-429d-9193-23d49fa70ed4",
+            	"email": "carlos21@gmail.com",
+            	"nome": "Carlos Clementino",
+            	"telefone": "11972935394",
+            	"equipeId": "c0437940-b76b-4aff-bdff-8f8efede130f"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/supervisor/8e4ec62e-85f9-42c0-b7ca-f663dba75c5d
+        name: Delete
+        meta:
+          id: req_c4ac4ec5f4024e10b4aea1f4c257e9bd
+          created: 1763764893721
+          modified: 1763905848754
+          isPrivate: false
+          sortKey: -1759000027155
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/supervisor
+        name: Get All
+        meta:
+          id: req_755cd838d30244ef940e8037c8866798
+          created: 1763764893724
+          modified: 1763905846322
+          isPrivate: false
+          sortKey: -1759000027355
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+            id: pair_33df632cda804139a8662b41c1b69541
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Equipe
+    meta:
+      id: fld_386f46d5a5204a5b8860dcb36fd78c76
+      created: 1763764893725
+      modified: 1763764893725
+      sortKey: -1760507930928
+    children:
+      - url: http://localhost:5281/equipe/c0437940-b76b-4aff-bdff-8f8efede130e
+        name: Get ID Equipe
+        meta:
+          id: req_dfd8e07d1b394168b7633c94a0bade7a
+          created: 1763764893727
+          modified: 1763905772214
+          isPrivate: false
+          sortKey: -1762726243945
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/equipe
+        name: Get all
+        meta:
+          id: req_00f5a3f27f0f4a55a399cec3e63fa27c
+          created: 1763764893729
+          modified: 1763905774517
+          isPrivate: false
+          sortKey: -1762726157261
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/equipe
+        name: Update
+        meta:
+          id: req_b0a01f9c662b4bd9b26f97438ce9fd63
+          created: 1763764893730
+          modified: 1763905769125
+          isPrivate: false
+          sortKey: -1762726293941
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "id": "c0437940-b76b-4aff-bdff-8f8efede130e",
+              "nome": "Equipe01",
+              "descricao": "2025-11-09"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/equipe
+        name: Create
+        meta:
+          id: req_37a588e9490d42ac86cec4856e010520
+          created: 1763764893731
+          modified: 1763905766081
+          isPrivate: false
+          sortKey: -1762726323042
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "Xique-Xique-Bahia",
+              "descricao": "Equipe dos sonecas da empresa"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/equipe/2ad978c9-5b8d-4241-896e-b0ad6d2491c0
+        name: Delete
+        meta:
+          id: req_62748583fa4b42dfbb4295eae47e8355
+          created: 1763764893733
+          modified: 1763905762545
+          isPrivate: false
+          sortKey: -1762726334744
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Operadores
+    meta:
+      id: fld_0ba3f2c671bc4cc684df238674bff69b
+      created: 1763764893734
+      modified: 1763764893734
+      sortKey: -1759796606634.5
+    children:
+      - url: "http://localhost:8080/operador/af8ffbe5-58cd-43d6-a767-b30c8d69201b\t"
+        name: Get ID Operador
+        meta:
+          id: req_ffee6adda79e420eb509596f931570a0
+          created: 1763764893735
+          modified: 1763905802574
+          isPrivate: false
+          sortKey: -1762726243945
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/operador
+        name: Get all
+        meta:
+          id: req_65520526193b44c48dec5e890ce4a165
+          created: 1763764893736
+          modified: 1763905804736
+          isPrivate: false
+          sortKey: -1762726202434
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/operador
+        name: Update
+        meta:
+          id: req_55449e8679f54f01aee07e20de1d73a5
+          created: 1763764893737
+          modified: 1763905800322
+          isPrivate: false
+          sortKey: -1762726293941
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "id": "5dbf58b6-8332-4fc5-8420-500615a4f97a",
+              "nome": "Roberto Souza Santos",
+              "funcao": "Fazer quebra-galhos",
+            	"equipeId": "2ad978c9-5b8d-4241-896e-b0ad6d2491c0"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/operador
+        name: Create
+        meta:
+          id: req_1e48904476984abd96354073f7fd1e8f
+          created: 1763764893738
+          modified: 1763905797761
+          isPrivate: false
+          sortKey: -1762726323042
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "Arthur Souza",
+              "funcao": "Fazer quebra-galhos",
+            	"equipeId": "8b0c377e-6ae4-4a88-af98-da897acb951a"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/operador/5dbf58b6-8332-4fc5-8420-500615a4f97a
+        name: Delete
+        meta:
+          id: req_cca1b07f2db34c16a59580a931099c12
+          created: 1763764893739
+          modified: 1763905795163
+          isPrivate: false
+          sortKey: -1762726334744
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/operador/equipe/2ad978c9-5b8d-4241-896e-b0ad6d2491c0
+        name: Get Operadores Equipe
+        meta:
+          id: req_5700b368531e4b488cc3ce4f049bc8de
+          created: 1763764893740
+          modified: 1763778076123
+          isPrivate: false
+          sortKey: -1763727705987
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Setor
+    meta:
+      id: fld_36bde57809f24050b553480aed68c992
+      created: 1763764893741
+      modified: 1763764893741
+      sortKey: -1760152268781.25
+    children:
+      - url: http://localhost:5281/setor/bb52733c-804c-4e98-bc69-d13858d9ff6d
+        name: Get ID Setor
+        meta:
+          id: req_a42f97a0104a410a980765c78152a375
+          created: 1763764893742
+          modified: 1763905785389
+          isPrivate: false
+          sortKey: -1762726243945
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/setor
+        name: Get all
+        meta:
+          id: req_b785f8a30eb04cf9ac97397d26727d33
+          created: 1763764893743
+          modified: 1763905787622
+          isPrivate: false
+          sortKey: -1762726157261
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/setor/5f30457b-1cfb-493e-bb97-d5a8af25c25c
+        name: Delete
+        meta:
+          id: req_4cba967a6c534e1b94325c1893322bb4
+          created: 1763764893744
+          modified: 1763905779188
+          isPrivate: false
+          sortKey: -1762726334744
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/setor
+        name: Update
+        meta:
+          id: req_ee626cc8fd4e48d3af039902a11a07f8
+          created: 1763764893744
+          modified: 1763905783173
+          isPrivate: false
+          sortKey: -1762726293941
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "id": "bb52733c-804c-4e98-bc69-d13858d9ff6d",
+              "nome": "Equipe01",
+              "descricao": "2025-11-09"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/setor
+        name: Create
+        meta:
+          id: req_86ea0d34ef5f4d41bfa179f4e0db582e
+          created: 1763764893745
+          modified: 1763905781190
+          isPrivate: false
+          sortKey: -1762726323042
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "Canteiro de obras",
+              "descricao": "canteiro frontal"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Camera
+    meta:
+      id: fld_3ae8a7f322064a8cb439f66ae7c8e145
+      created: 1763764893746
+      modified: 1763764893746
+      sortKey: -1759440944487.75
+    children:
+      - url: http://localhost:5281/camera
+        name: Get all
+        meta:
+          id: req_5102cc0d9e054305bdb5009562dde127
+          created: 1763764893748
+          modified: 1763905841108
+          isPrivate: false
+          sortKey: -1762726202434
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/camera/0334b5c2-5ebb-4bc0-acdf-effb7289ab1b
+        name: Get ID Camera
+        meta:
+          id: req_f533ca251afc439785535bca2554147a
+          created: 1763764893748
+          modified: 1763905838898
+          isPrivate: false
+          sortKey: -1762726243945
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/camera
+        name: Update
+        meta:
+          id: req_4330d3710ae84dd89840d4ad57aebcc5
+          created: 1763764893749
+          modified: 1763905836031
+          isPrivate: false
+          sortKey: -1762726293941
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "id": "0334b5c2-5ebb-4bc0-acdf-effb7289ab1b",
+              "localizacao": "Teto lado Central",
+              "descricao": "Camera VOIP",
+            	"status": "INATIVO",
+            	"setorId": "5f30457b-1cfb-493e-bb97-d5a8af25c25c"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/camera
+        name: Create
+        meta:
+          id: req_b5942e6f43e546098200db299765740c
+          created: 1763764893750
+          modified: 1763905833231
+          isPrivate: false
+          sortKey: -1762726323042
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "localizacao": "Teto lado Esquerdo",
+              "descricao": "Camera Intelbras",
+            	"status": "ATIVO",
+            	"setorId": "5f30457b-1cfb-493e-bb97-d5a8af25c25c"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/camera/ebe014d8-54d0-4310-8f5a-dfaf8b7503cf
+        name: Delete
+        meta:
+          id: req_4837a0f4fe6d46229427b4970176c9b5
+          created: 1763764893751
+          modified: 1763905830337
+          isPrivate: false
+          sortKey: -1762726334744
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/camera/setor/5f30457b-1cfb-493e-bb97-d5a8af25c25c
+        name: Get Cameras Setor
+        meta:
+          id: req_7493234b64e64a54adf3c5a8670f147b
+          created: 1763764893752
+          modified: 1763813663214
+          isPrivate: false
+          sortKey: -1763727705987
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Alerta
+    meta:
+      id: fld_0cd674a5e914456785aa977f9bfdaf97
+      created: 1763764893753
+      modified: 1763764893753
+      sortKey: -1759618775561.125
+    children:
+      - url: http://localhost:5281/alerta
+        name: Get all
+        meta:
+          id: req_0d8d2a4a9c6d4fa688b84689ebecb49b
+          created: 1763764893755
+          modified: 1763905823442
+          isPrivate: false
+          sortKey: -1762726202434
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/alerta/7c1f2fe4-28e8-4ce7-9b0f-e5720d935492
+        name: Get ID Alerta
+        meta:
+          id: req_1c41ea8dde5e4efa924c4651a046ca61
+          created: 1763764893755
+          modified: 1763905821110
+          isPrivate: false
+          sortKey: -1762726243945
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/alerta
+        name: Update
+        meta:
+          id: req_e6d2e0e981394904971f1604b49a1445
+          created: 1763764893756
+          modified: 1763905818406
+          isPrivate: false
+          sortKey: -1762726293941
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "id": "7c1f2fe4-28e8-4ce7-9b0f-e5720d935492",
+              "motivo": "Falta de Luvas",
+              "nivelAlerta": "Medio",
+            	"operadorId": "f0f53d9c-ed05-41b1-8328-e759d685e598",
+            	"cameraId": "07d13a6b-4d17-4e07-87ef-3b8ee310ebc2"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/alerta
+        name: Create
+        meta:
+          id: req_263b8983e18545eaa1d798f2f7721bbf
+          created: 1763764893757
+          modified: 1763905815612
+          isPrivate: false
+          sortKey: -1762726323042
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "motivo": "Falta de Capacete",
+              "nivelAlerta": "Medio",
+            	"operadorId": "f0f53d9c-ed05-41b1-8328-e759d685e598",
+            	"cameraId": "07d13a6b-4d17-4e07-87ef-3b8ee310ebc2"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/alerta/bcd81bcb-156c-4708-b66e-1e762ce2a8fb
+        name: Delete
+        meta:
+          id: req_6f4ba2bdef7541c7bf86e74a3d953b02
+          created: 1763764893758
+          modified: 1763905812840
+          isPrivate: false
+          sortKey: -1762726334744
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: none
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/alerta/operador/f0f53d9c-ed05-41b1-8328-e759d685e598
+        name: Get Alertas Operador
+        meta:
+          id: req_acfda9afc12c4b5d839b4c3178d48b56
+          created: 1763764893758
+          modified: 1763816949966
+          isPrivate: false
+          sortKey: -1763727705987
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5281/alerta/setor/b188a0f9-5e24-4c26-8fd0-8f0d7e5c32a9
+        name: Get Alertas Setor
+        meta:
+          id: req_8b16495c17614354bc0fb996f610c3d0
+          created: 1763764893759
+          modified: 1763816902204
+          isPrivate: false
+          sortKey: -1763727518635
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_8e32061387224cd89d04545f0bddb8e8
+    created: 1763764893713
+    modified: 1763764893713
+  cookies:
+    - key: JSESSIONID
+      value: 02CE622FD137CFD9A920B7CD13654556
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-10-29T11:33:39.848Z
+      lastAccessed: 2025-11-21T01:18:35.553Z
+      id: f42f85b1-19f0-453b-8e03-9e2d67af29da
+environments:
+  name: Base Environment
+  meta:
+    id: env_d4bcf179d89b43ebb6f808bc087e8827
+    created: 1763764893712
+    modified: 1763764893712
+    isPrivate: false
