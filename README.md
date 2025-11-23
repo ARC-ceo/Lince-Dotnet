@@ -15,11 +15,11 @@ acidentes e centralizando informações essenciais para os times de
 segurança corporativa.
 
 ## Problemas que a aplicação resolve
--   Falta de visibilidade sobre **uso correto** de EPIs.\
+-   Falta de visibilidade sobre **uso correto** de EPIs.
 -   Dificuldade em monitorar automaticamente **violação de áreas
-    restritas**.\
--   Baixa eficiência em auditorias e checklists de segurança.\
--   Falta de relatórios centralizados para tomada de decisão.\
+    restritas**.
+-   Baixa eficiência em auditorias e checklists de segurança.
+-   Falta de relatórios centralizados para tomada de decisão.
 -   Integração limitada entre sensores físicos e aplicações
     administrativas.
 
