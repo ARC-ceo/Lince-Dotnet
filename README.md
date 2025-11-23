@@ -56,6 +56,7 @@ dotnet run
 ### Testando a API
 A documentação dos endpoints está disponível via **Swagger UI**:  
 `http://localhost:5281/`
+Além disso, disponibilizamos no repositório uma **collection do Insomnia** contendo todas as requisições da API prontas para uso, facilitando os testes e a integração durante o desenvolvimento.
 
 ## Endpoints da API
 
